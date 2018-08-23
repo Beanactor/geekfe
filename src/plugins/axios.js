@@ -4,6 +4,7 @@ import {requestSuccessFunc, requestFailFunc, responseSuccessFunc, responseFailFu
 
 let axiosInstance = {}
 
+console.log(AXIOS_DEFAULT_CONFIG);
 axiosInstance = axios.create(AXIOS_DEFAULT_CONFIG)
 
 // 注入请求拦截

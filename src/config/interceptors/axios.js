@@ -24,13 +24,13 @@ export function responseSuccessFunc (responseObj) {
     //     msg: 'this is a msg',
     //     data: null
     // }
-
     let resData =  responseObj.data
-    let {code} = resData
+    let {status} = responseObj
+    
 
-    switch(code) {
-        case 0: // 如果业务成功，直接进成功回调  
-            return resData.data;
+    switch(status) {
+        case 200: // 如果业务成功，直接进成功回调  
+            return resData.content;
         case 1111: 
             // 如果业务失败，根据不同 code 做不同处理
             // 比如最常见的授权过期跳登录
