@@ -2,6 +2,9 @@
 	<div class="section-home">
 		<div>{{ msg }}</div>
 		<div class="test">
+			<span>
+				123
+			</span>
 		</div>
 	</div>
 </template>
@@ -33,5 +36,8 @@ export default {
   width: 1rem;
   height: 1rem;
   background-color: #0f8;
+	span {
+		color: #f00;
+	}
 }
 </style>
