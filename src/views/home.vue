@@ -34,7 +34,6 @@ export default {
   },
   methods: {
     toProjectDetail() {
-      console.log(this.$router)
       this.$router.push({
         path: '/projectDetail'
       })

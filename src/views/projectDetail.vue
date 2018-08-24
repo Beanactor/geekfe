@@ -8,7 +8,6 @@
  export default {
    data () {
      return {
-       msg: 'project-details'
      }
    },
    // 创建之前
@@ -17,7 +16,6 @@
    },
    // 创建之后
    created() {
-       console.log(this.msg)
    },
    // 挂载之前
    beforeMount() {

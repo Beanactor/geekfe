@@ -1,7 +1,7 @@
   import {CONSOLE_REQUEST_ENABLE, CONSOLE_RESPONSE_ENABLE} from '../index.js'
 
 export function requestSuccessFunc (requestObj) {
-    CONSOLE_REQUEST_ENABLE && console.info('requestInterceptorFunc', `url: ${requestObj.url}`, requestObj)
+    // CONSOLE_REQUEST_ENABLE && console.info('requestInterceptorFunc', `url: ${requestObj.url}`, requestObj)
     // 自定义请求拦截逻辑，可以处理权限，请求发送监控等
     // ...
 
@@ -27,7 +27,7 @@ export function responseSuccessFunc (responseObj) {
         let resData =  responseObj.data
         let {status} = responseObj
         
-        CONSOLE_RESPONSE_ENABLE && console.dir(responseObj);
+        // CONSOLE_RESPONSE_ENABLE && console.dir(responseObj);
 
     switch(status) {
         case 200: // 如果业务成功，直接进成功回调  
