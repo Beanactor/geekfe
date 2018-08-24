@@ -15,7 +15,8 @@ export default {
   beforeCreate: function() {},
   // 创建之后
   created() {
-    this.$axios("mp/edu/index?pageNum=1&pageSize=6").then(
+    console.log(this.$api)
+    this.$axios(this.$api.eduList).then(
       ({ rows }) => {
         // console.log(rows);
       },
