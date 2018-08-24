@@ -58,9 +58,9 @@ input[type=number]::-webkit-outer-spin-button {
 body {
   -webkit-overflow-scrolling: touch;
 }
-// 表单背景色延迟加载
+/* // 表单背景色延迟加载 */
 input:-webkit-autofill , textarea:-webkit-autofill, select:-webkit-autofill {
-  //背景色透明  生效时长  过渡效果  启用时延迟的时间
+  /* //背景色透明  生效时长  过渡效果  启用时延迟的时间 */
   transition: background-color 500s ease-in-out 0s;
 }
 
