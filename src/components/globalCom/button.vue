@@ -1,6 +1,6 @@
 <template>
   <button class="com_button" :class="{'com_button_click': isClick}" @click="buttonClick">
-    <slot>确认</slot>
+     确定
   </button>
 </template>
 
@@ -28,7 +28,7 @@ export default {
 </script>
 
 <style lang="scss">
-  @import '../../assets/style/base/common_style';
+  @import '../../assets/style/base/common';
   .com_button {
     @include buttonAccountChangeStyle();
     transition: all .1s;

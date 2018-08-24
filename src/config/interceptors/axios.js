@@ -1,4 +1,4 @@
-import {CONSOLE_REQUEST_ENABLE, CONSOLE_RESPONSE_ENABLE} from '../index.js'
+  import {CONSOLE_REQUEST_ENABLE, CONSOLE_RESPONSE_ENABLE} from '../index.js'
 
 export function requestSuccessFunc (requestObj) {
     CONSOLE_REQUEST_ENABLE && console.info('requestInterceptorFunc', `url: ${requestObj.url}`, requestObj)
@@ -20,13 +20,14 @@ export function responseSuccessFunc (responseObj) {
     // ...
     // 假设我们请求体为
     // {
-    //     code: 1010,
-    //     msg: 'this is a msg',
-    //     data: null
-    // }
-    let resData =  responseObj.data
-    let {status} = responseObj
-    
+        //     code: 1010,
+        //     msg: 'this is a msg',
+        //     data: null
+        // }
+        let resData =  responseObj.data
+        let {status} = responseObj
+        
+        CONSOLE_RESPONSE_ENABLE && console.dir(responseObj);
 
     switch(status) {
         case 200: // 如果业务成功，直接进成功回调  

@@ -1,7 +1,6 @@
 <template>
   <div id="pageHead" :class="{'page_head_opacity': opacity}">
-    <p class="iconfont icon-return" @click="clickBack"></p>
-     <!-- 123 -->
+    <p class="iconfont icon-return" @click="clickBack"><</p>
     <slot name='top'></slot>
     <slot name='bottom'></slot>
   </div>
@@ -44,6 +43,7 @@ export default {
       top: 0;
       left: 0;
       width: 100px;
+      height: 100px;
       font-size: 30px;
     }
     &.page_head_opacity {

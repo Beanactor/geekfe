@@ -1,24 +1,19 @@
 <template>
 	<div class="section-home">
-    <com-header>
-      <span slot='top'>top</span>
-      <span slot='bottom'>header</span>
-    </com-header>
-    <div class="home-title">{{ msg }}</div>
+    <p>123</p>
+    <com-button :click='click'>    </com-button>
 	</div>
 </template>
 
 <script>
 export default {
   data() {
-    return {
-      msg: "home"
-    };
+    return {};
   },
   created() {
     this.$axios("mp/edu/index?pageNum=1&pageSize=6").then(
       ({ rows }) => {
-        console.log(rows);
+        // console.log(rows);
       },
       (code, msg) => {
         // 当有特定 code 需要特殊处理，传入 noShowDefaultError:true，在这个回调处理就行
@@ -27,8 +22,17 @@ export default {
   },
   mounted() {},
   methods: {
+    click(){
+      console.log(123)
+    }
   }
 };
 </script>
+<style lang="scss" scoped>
+.section-home {
+  color: #f00;
+}
+</style>
+
 
 
