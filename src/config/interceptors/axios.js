@@ -32,7 +32,7 @@ export function responseSuccessFunc (responseObj) {
     switch(status) {
         case 200: // 如果业务成功，直接进成功回调  
             return resData.content;
-        case 1111: 
+        case 404: 
             // 如果业务失败，根据不同 code 做不同处理
             // 比如最常见的授权过期跳登录
             // 特定弹窗
@@ -50,5 +50,6 @@ export function responseSuccessFunc (responseObj) {
 export function responseFailFunc (responseError) {
     // 响应失败，可根据 responseError.message 和 responseError.response.status 来做监控处理
     // ...
+    console.log('err' + error) // for debug
     return Promise.reject(responseError);
 }

@@ -1,3 +1,3 @@
 export default {
-    "eduList": "mp/edu/index?pageNum=1&pageSize=6"
+    "eduList": "index?pageNum=1&pageSize=6"
 }
