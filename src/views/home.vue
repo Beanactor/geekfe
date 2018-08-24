@@ -1,12 +1,6 @@
 <template>
 	<div class="section-home">
-		<div>{{ msg }}</div>
-		<div class="test">
-			<span>
-				123
-			</span>
-		</div>
-    <com-button :click='click'></com-button>
+		<div class="home-title">{{ msg }}</div>
 	</div>
 </template>
 
@@ -29,20 +23,8 @@ export default {
   },
   mounted() {},
   methods: {
-    click() {
-      alert(123)
-    }
   }
 };
 </script>
 
-<style lang="scss" scoped type="text/css">
-.test {
-  width: 1rem;
-  height: 1rem;
-  background-color: #0f8;
-	span {
-		color: #f00;
-	}
-}
-</style>
+

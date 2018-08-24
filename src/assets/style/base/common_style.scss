@@ -1,0 +1,70 @@
+// 绿色
+$green: #ef2970;
+// 青色
+$cyan: #eb1d50;
+// 白色
+$white: #fff;
+// 灰色文字
+$whiteLow: #8a9dac;
+// 浅灰色
+$gray: #7b8696;
+// 蓝色
+$blue: #4793f1;
+// 红色
+$red: #e34d4a;
+// 背景色
+$bgColor: #f3f2f7;
+
+$lgray: #636675;
+$dgray: #414557;
+// 文字颜色渐变样式
+@mixin textChangeColor ($direction: right 0, $startColor: $cyan, $endColor: $green) {
+  color: $startColor;
+  background-image: -webkit-gradient(linear, 0 0, $direction, from($startColor), to($endColor));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+// 块背景渐变样式
+@mixin bgChangeStyle ($direction: right, $startColor: $cyan, $endColor: $green) {
+  background: linear-gradient(to $direction, $startColor, $endColor);
+}
+// 按钮背景渐变样式
+@mixin buttonBgChangeStyle ($left: $cyan, $right: $green) {
+  background: linear-gradient(to bottom, $left, $right);
+  line-height: 88px;
+  height: 88px;
+  width: 670px;
+  border-radius: 44px;
+  font-size: 30px;
+  color: #373b4e;
+  display: block;
+  margin: 0 auto;
+}
+// 按钮背景渐变样式
+@mixin buttonAccountChangeStyle ($left: $lgray, $right: $dgray) {
+  background: linear-gradient(to right, $left, $right);
+  line-height: 88px;
+  height: 88px;
+  width: 320px;
+  border-radius: 19px;
+  font-size: 30px;
+  color: #2456bb;
+  display: inline-block;
+  text-align: center;
+}
+.Fleft{
+  float: left;
+}
+.Fright{
+  float: right;
+}
+// 如果有头部定位的话，需要给盒子加的padding-top;
+.fix_pad_top {
+  padding-top: 100px;
+}
+/*清除浮动*/
+.clearfix:after{
+  content: '';
+  display: block;
+  clear: both;
+}
