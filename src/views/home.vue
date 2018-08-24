@@ -1,7 +1,6 @@
 <template>
 	<div class="section-home">
-    <p>123</p>
-    <com-button :click='click'>    </com-button>
+    
 	</div>
 </template>
 
@@ -10,6 +9,9 @@ export default {
   data() {
     return {};
   },
+  // 创建之前
+  beforeCreate: function() {},
+  // 创建之后
   created() {
     this.$axios("mp/edu/index?pageNum=1&pageSize=6").then(
       ({ rows }) => {
@@ -20,12 +22,15 @@ export default {
       }
     );
   },
-  mounted() {},
-  methods: {
-    click(){
-      console.log(123)
-    }
-  }
+  // 挂载之前
+  beforeMount: function() {},
+  // 挂载之后
+  mounted: function() {
+ 
+  },
+  beforeDestroy: function() {
+  },
+  methods: {}
 };
 </script>
 <style lang="scss" scoped>
