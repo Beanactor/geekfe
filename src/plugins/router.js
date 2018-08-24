@@ -9,7 +9,7 @@ Vue.use(Router)
 // 注入默认配置和路由表
 let routerInstance = new Router({
     ...ROUTER_DEFAULT_CONFIG,
-    routes: ROUTES
+    routes: [].concat(ROUTES),
 })
 // 注入拦截器
 routerInstance.beforeEach(routerBeforeEachFunc)

@@ -1,6 +1,6 @@
 <template>
   <div id="pageHead" :class="{'page_head_opacity': opacity}">
-    <p class="iconfont icon-return" @click="clickBack"><</p>
+    <p class="iconfont icon-return" @click="clickBack"></p>
     <slot name='top'></slot>
     <slot name='bottom'></slot>
   </div>

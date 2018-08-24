@@ -1,6 +1,8 @@
 <template>
 	<div class="section-home">
-    
+    <div class="projectDetail" @click='toProjectDetail'>
+
+    </div>
 	</div>
 </template>
 
@@ -30,12 +32,24 @@ export default {
   },
   beforeDestroy: function() {
   },
-  methods: {}
+  methods: {
+    toProjectDetail() {
+      console.log(this.$router)
+      this.$router.push({
+        path: '/projectDetail'
+      })
+    }
+  }
 };
 </script>
 <style lang="scss" scoped>
 .section-home {
   color: #f00;
+  .projectDetail {
+    width: 100px;
+    height: 100px;
+    background-color: #08f;
+  }
 }
 </style>
 
