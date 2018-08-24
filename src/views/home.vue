@@ -1,6 +1,10 @@
 <template>
 	<div class="section-home">
-		<div class="home-title">{{ msg }}</div>
+    <com-header>
+      <span slot='top'>top</span>
+      <span slot='bottom'>header</span>
+    </com-header>
+    <div class="home-title">{{ msg }}</div>
 	</div>
 </template>
 
