@@ -61,7 +61,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import "./assets/style/base/reset.scss";
+@import "./assets/style/index.scss";
 #app {
   width: 100%;
   min-height: 100vh;

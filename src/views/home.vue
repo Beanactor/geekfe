@@ -6,6 +6,7 @@
 				123
 			</span>
 		</div>
+    <com-button :click='click'></com-button>
 	</div>
 </template>
 
@@ -27,7 +28,11 @@ export default {
     );
   },
   mounted() {},
-  methods: {}
+  methods: {
+    click() {
+      alert(123)
+    }
+  }
 };
 </script>
 
