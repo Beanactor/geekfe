@@ -16,7 +16,7 @@ export default {
   // 创建之后
   created() {
     console.log(this.$api)
-    this.$axios(this.$api.eduList).then(
+    this.$axios(this.$api.eduList, {pageNum: 1, pageSize:2}).then(
       ({ rows }) => {
         // console.log(rows);
       },

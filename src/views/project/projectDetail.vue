@@ -1,6 +1,6 @@
 <template>
  <div class='project-details'>
-
+{{ msg }}
  </div>
 </template>
 
@@ -8,6 +8,7 @@
  export default {
    data () {
      return {
+       msg: 'projectDetails'
      }
    },
    // 创建之前
