@@ -27,8 +27,8 @@ export default {
 };
 </script>
 
-<style lang="scss">
-  @import '../../assets/style/base/common';
+<style lang="scss" scoped>
+  @import '../../assets/style/common';
   .com_button {
     @include buttonAccountChangeStyle();
     transition: all .1s;
