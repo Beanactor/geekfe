@@ -12,7 +12,7 @@ import './utils/rem'
 import './components/common/_export';
 
 // 引入插件
-import router from './plugins/router'
+import router from './routes/app'
 import inject from './plugins/inject'
 //import store from 'Plugins/store'
 
