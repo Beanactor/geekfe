@@ -4,9 +4,8 @@ import Vue from 'vue'
 // 挂载 window 上的全局对象,减少命名空间冲突的可能
 window.GLOBAL = {};
 GLOBAL.vbus = new Vue()
-
-// import 'Components'// 全局组件注册
-//import 'Directives' // 指令
+//引入rem适配
+import './utils/rem'
 // 引入组件
 import './components/common/_export';
 

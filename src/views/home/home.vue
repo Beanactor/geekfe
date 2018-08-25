@@ -46,8 +46,8 @@ export default {
 .section-home {
   color: #f00;
   .projectDetail {
-    width: 100px;
-    height: 100px;
+    width: 1rem;
+    height: 1rem;
     background-color: #08f;
   }
 }
