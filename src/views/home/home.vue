@@ -15,8 +15,8 @@ export default {
   beforeCreate: function() {},
   // 创建之后
   created() {
-    console.log(this.$api)
-    this.$axios(this.$api.eduList, {pageNum: 1, pageSize:2}).then(
+    console.log(this.$api);
+    this.$axios(this.$api.eduList, { params: { pageNum: 1, pageSize: 2 } }).then(
       ({ rows }) => {
         // console.log(rows);
       },
@@ -28,16 +28,13 @@ export default {
   // 挂载之前
   beforeMount: function() {},
   // 挂载之后
-  mounted: function() {
- 
-  },
-  beforeDestroy: function() {
-  },
+  mounted: function() {},
+  beforeDestroy: function() {},
   methods: {
     toProjectDetail() {
       this.$router.push({
-        path: '/projectDetail'
-      })
+        path: "/projectDetail"
+      });
     }
   }
 };
