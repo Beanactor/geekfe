@@ -41,7 +41,6 @@ export default {
 </script>
 <style lang="scss" scoped>
 .section-home {
-  color: #f00;
   .projectDetail {
     width: 1rem;
     height: 1rem;
