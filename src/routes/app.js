@@ -9,7 +9,6 @@ Vue.use(Router)
 
 // 注入默认配置和路由表
 let routerInstance = new Router({
-		mode: 'history',
     ...ROUTER_DEFAULT_CONFIG,
     routes: [].concat(indexRouter, projectRouter),
 })
