@@ -23,7 +23,7 @@ export default {
   },
   methods: {
     bindEvents() {
-      GLOBAL.vbus.$on("global.dialog.show", msg => {
+      global.vbus.$on("global.dialog.show", msg => {
         if (msg) return;
         // 我们会在这里注册全局需要操控试图层的事件，方便在非业务代码中通过发布订阅调用
         this.$dialog.popup({

@@ -15,10 +15,14 @@ export default {
   beforeCreate: function() {},
   // 创建之后
   created() {
-    console.log(this.$api);
+    // 测试progress-bar组件
+    this.$progress.start();
+    setTimeout(() => {
+         this.$progress.finish()
+    }, 3000);
     this.$axios(this.$api.eduList, { params: { pageNum: 1, pageSize: 2 } }).then(
       ({ rows }) => {
-        // console.log(rows);
+        console.log(rows);
       },
       (code, msg) => {
         // 当有特定 code 需要特殊处理，传入 noShowDefaultError:true，在这个回调处理就行
